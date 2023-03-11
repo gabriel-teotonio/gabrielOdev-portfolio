@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    background-color: var(--color-bg);
+    font-size: 16px;
+
+    a{
+        color: currentColor;
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+    }
+}
+
+@mixin paddingPageDefault {
+    padding: 2rem 4rem;
+
+    @media (max-width:430px) {
+        padding: 4rem 1rem;
+    }
+    
+}

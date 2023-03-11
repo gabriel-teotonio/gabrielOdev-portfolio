@@ -1,0 +1,53 @@
+@keyframes colorLogo {
+    from{
+        color: var(--color-primary);
+    }
+    to{
+        color: rgb(18, 18, 255);
+    }
+}
+
+
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+
+    .logo{
+        font-size: 1.5rem;
+        span{
+            animation: colorLogo 4s alternate infinite;
+        }
+    }
+
+    .menu-list{
+        display: flex;
+        gap: 2rem;
+
+        .menu-item{
+            transition: all .3s ease;
+            &:hover{
+                color: var(--color-primary);
+            }
+        }
+    }
+}
+
+@media (max-width:770px) {
+    .header{
+        .menu-list{
+            display: none;
+        }
+    }
+}
+@media (max-width:430px) {
+    .header{
+        padding: 1rem;
+        justify-content: center;
+        .logo{
+            font-size: 2rem;
+        }
+    }
+}
