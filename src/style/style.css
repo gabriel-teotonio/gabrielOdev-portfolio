@@ -19,7 +19,7 @@ body li {
 }
 
 :root {
-  --title-h1: 3.5rem;
+  --title-h1: 64px;
   --font-bold: 700;
 }
 
@@ -106,8 +106,7 @@ body li {
   margin-top: 3rem;
 }
 .main .main-container .container-img {
-  width: 50%;
-  position: relative;
+  margin-left: auto;
 }
 .main .main-container .container-img .img-gabriel {
   width: 100%;
@@ -309,6 +308,8 @@ body li {
   height: auto;
   min-height: 60vh;
   background-image: url("../assets/imgs/bg-about.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 2rem 4rem;
   display: flex;
   align-items: start;
@@ -323,12 +324,15 @@ body li {
 }
 
 @media (max-width: 430px) {
+  .about {
+    background-position: center;
+  }
   .about .about-content {
     width: 100%;
   }
 }
 .contact {
-  min-height: 100vh;
+  min-height: 50vh;
   height: auto;
   display: flex;
   align-items: center;

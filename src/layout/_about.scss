@@ -3,16 +3,22 @@
     height: auto;   
     min-height: 60vh;
     background-image: url('../assets/imgs/bg-about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     @include paddingPageDefault();
     display: flex;
     align-items: start;
     .about-content{
         width: 60%;
+        // .about-content_text{
+        //     width: 70%;
+        // }
     }
 }
 
 @media (max-width:430px) {
     .about{
+        background-position: center;
         .about-content{
             width: 100%;
         }
